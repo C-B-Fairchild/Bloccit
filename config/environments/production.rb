@@ -5,7 +5,6 @@ Bloccit::Application.configure do
   config.cache_classes = true
 
   config.action_mailer.default_url_options = {host: 'cbf-bloccit.herokuapp.com'}
-end
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
