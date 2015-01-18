@@ -50,7 +50,9 @@ gem 'devise'
 gem 'pundit'
 gem 'figaro', '1.0'
 gem 'redcarpet', '~>3.2.2'
-
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 
 
 # Use debugger
