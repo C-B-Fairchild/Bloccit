@@ -12,5 +12,7 @@
 
     <%= f.input :title, placeholder: "Enter post title", class: 'form-control'  %>
     <%= f.input :body, rows: 8, placeholder: "Enter post body", class: 'form-control' %>
+      <%= f.label :image %>
+      <%= f.file_field :image %>
     <%= f.submit 'Save', class: 'btn btn-success' %>
   <% end %>

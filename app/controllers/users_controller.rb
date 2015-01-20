@@ -6,7 +6,6 @@ class UsersController < ApplicationController
       flash[:notice] = "User information updated"
       redirect_to edit_user_registration_path
     else
-      debugger
       flash[:error]= "Invalid user information"
       redirect_to edit_user_registration_path
     end
