@@ -1,0 +1,21 @@
+<%= simple_form_for [topic, post, @comment] do |f| %>
+
+  <h4>Here's a little form to enter a comment</h4>
+  <p>It should just have a single text area and a green "Save" button.</p>
+    <% if @comment.errors.any? %>
+    <div class="alert alert-danger">
+      <h4>There are <%= pluralize(@comment.errors.count, "error") %></h4>
+      <ul>
+        <% @comment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= f.input :comment, placeholder: "Enter comment", class: 'form-control' %>
+    <%= f.submit 'Save Comment', class: 'btn btn-success' %>
+
+<% end %>
+
+
