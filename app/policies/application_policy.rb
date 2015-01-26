@@ -49,6 +49,12 @@ class ApplicationPolicy
     def resolve
       scope
     end
+
+    private
+
+    def can_moderate?
+      (record.user || user.admin || user.moderator?)
+    end
   end
 end
 
