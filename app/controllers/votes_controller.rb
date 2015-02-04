@@ -24,7 +24,6 @@ private
        authorize @vote, :update?
       @vote.update_attribute(:value, new_value)
     else
-       @vote = current_user.votes.create(value: new_value, post: @post)
        @vote = current_user.votes.build(value: new_value, post: @post)
        authorize @vote, :create?
        @vote.save

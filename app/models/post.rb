@@ -32,10 +32,6 @@ class Post < ActiveRecord::Base
   validates :topic, presence: true
   validates :user, presence: true
 
-    after_create :create_vote
-
-  private
-
   def create_vote
     user.votes.create(post: self, value: 1)
   end
