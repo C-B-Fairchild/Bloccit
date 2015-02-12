@@ -31,6 +31,14 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+
+  # If you need more of the backtrace for any of these deprecations to
+  # identify where to make the necessary changes, you can configure
+  # `config.raise_errors_for_deprecations!`, and it will turn the
+  # deprecation warnings into errors, giving you the full backtrace.
+
+  config.raise_errors_for_deprecations!
+
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
