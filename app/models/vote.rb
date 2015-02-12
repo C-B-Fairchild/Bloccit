@@ -10,7 +10,7 @@ class Vote < ActiveRecord::Base
     value == 1
   end
 
-  def down_vote
+  def down_vote?
     value == -1
   end
   
