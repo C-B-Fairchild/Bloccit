@@ -1,6 +1,6 @@
 module TestFactories
 
-     def associated_post(options={})
+  def associated_post(options={})
     post_options = {
       title: 'Post title',
       body: 'Post bodies must be pretty long.',
@@ -17,5 +17,12 @@ module TestFactories
     user.save
     user
   end
+
+  FactoryGirl.define do
+  factory :user do
+    email 'member@example.com'
+    password 'helloworld'
+  end
+end
   
 end

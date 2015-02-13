@@ -33,4 +33,7 @@ Bloccit::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+  #provide the :host parameter, set default_url_options[:host], or set :only_path to true
+  #http://stackoverflow.com/questions/7182600/rspec-route-testing-and-hosts
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
