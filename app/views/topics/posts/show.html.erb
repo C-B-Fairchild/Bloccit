@@ -39,7 +39,7 @@
   <div class="col-md-8">
     <h4>Here are previous comments on this post.</h4>
       <% @comments.each do |comment| %>
-      <%= render partial: 'comments/comment', locals: {comment: comment} %>
+      <%= render partial: 'comments/comment', collection: @comments %>
       <% end %>
   </div>
 </div>
