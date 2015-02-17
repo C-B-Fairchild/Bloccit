@@ -1,0 +1,6 @@
+<%= simple_form_for topic do |f| %>
+  <%= f.input :name, class: 'form-control', placeholder: "Enter topic name" %>
+  <%= f.input :description, class: 'form-control', placeholder: "Enter topic description" %>    
+  <%= f.input_field :public, as: :boolean, boolean_style: :inline %> Public Topic <br/>
+  <%= f.submit "Save", class: 'btn btn-success' %>
+<% end %>
