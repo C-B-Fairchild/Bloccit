@@ -53,6 +53,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'newrelic_rpm'
 gem 'faker'
 gem 'devise'
 gem 'pundit'
